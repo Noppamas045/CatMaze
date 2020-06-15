@@ -12,12 +12,14 @@ void loop() {
   Serial.write(0xff);
   Serial.write(0xff);
   Serial.write(0xff);
-  delay(1000);
+  delay(2000);
+
   SC = digitalRead(pin);
   SC = 0;
   Serial.print("page 0");
   Serial.write(0xff);
   Serial.write(0xff);
   Serial.write(0xff);
-  delay(1000);
+  delay(2000);
 }
+
