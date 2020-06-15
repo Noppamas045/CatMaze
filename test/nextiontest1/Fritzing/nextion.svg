@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='1.6in' height='2.2in' viewBox='0 0 115.2 158.4' >
+<g partID='854113410'><g  id="breadboard">
+ <g  id="icon">
+  <path  stroke="none" fill="#1F7A34" d="M0,0L0,77.04A2.16,2.16,0,0,1,0,81.36L0,158.4L115.2,158.4L115.2,0L0,0z" stroke-width="0"/>
+  <g transform="matrix(1, 0, 0, 1, 7.2, 14.292)">
+   <g >
+    <g  id="Ebene_1"/>
+    <g  id="Ebene_3">
+     <polygon  points="84.0139,111.018,84.0139,116.054,61.761,116.054,58.481,114.063,41.314,114.063,38.035,116.054,15.782,116.054,15.782,111.018" fill="#1F7A34"/>
+    </g>
+    <g  id="Ebene_2">
+     <rect  width="19.883" y="109.101" fill="#1F7A34" x="15.782" height="20.715"/>
+     <g >
+      <polygon  points="0,112.041,0.06,89.7667,100.8,89.8272,100.74,112.041" fill="#FFFFFF"/>
+      <g >
+       <path  fill="#7A7A7A" d="M100.681,89.8862l0,22.095L0.12,111.981L0.12,89.8862L100.681,89.8862M100.8,89.7667L0,89.7667L0,112.1l100.8,0L100.8,89.7667L100.8,89.7667z"/>
+      </g>
+     </g>
+     <g >
+      <rect  width="100.55" y="0.125" x="0.125" height="97.3498"/>
+      <g >
+       <path  fill="#C9C9C9" d="M100.55,0.25l0,97.0999L0.25,97.3498L0.25,0.25L100.55,0.25M100.8,0L0,0l0,97.6003l100.8,0L100.8,0L100.8,0z"/>
+      </g>
+     </g>
+     <g >
+      <rect  width="48.706" y="100.933" fill="#C9C9C9" x="25.614" height="4.987"/>
+      <polyline  stroke="#898989" points="25.614,105.92,25.614,100.933,74.3191,100.933" fill="none" stroke-width="0.3384" stroke-linecap="square"/>
+      <polyline  stroke="#B5B5B5" points="74.3191,100.932,74.3191,105.92,25.617,105.92" fill="none" stroke-width="0.3384" stroke-linecap="square"/>
+     </g>
+     <g >
+      <rect  width="7.87997" fill="#FFFFFF" height="1.072"/>
+      <rect  width="1.072" y="13.409" fill="#FFFFFF" height="7.87997"/>
+      <rect  width="1.072" y="70.409" fill="#FFFFFF" height="7.87997"/>
+     </g>
+     <g >
+      <rect  width="7.87997" fill="#FFFFFF" x="92.9203" height="1.072"/>
+      <rect  width="1.072" y="13.409" fill="#FFFFFF" x="99.7279" height="7.87997"/>
+      <rect  width="1.072" y="70.409" fill="#FFFFFF" x="99.7279" height="7.87997"/>
+     </g>
+     <rect  width="4.37" y="112.1" fill="#FFFFFF" height="3.954"/>
+     <rect  width="4.37" y="114.372" fill="#FFFFFF" x="15.782" height="3.954"/>
+     <rect  width="4.37" y="114.372" fill="#FFFFFF" x="33.48" height="3.954"/>
+     <rect  width="4.37" y="112.1" fill="#FFFFFF" x="96.4303" height="3.954"/>
+     <rect  width="4.37" y="112.1" fill="#FFFFFF" x="84.0139" height="1.977"/>
+     <rect  width="4.37" y="112.1" fill="#FFFFFF" x="11.412" height="1.977"/>
+     <rect  width="8.046" y="112.1" x="88.3843" height="3.954"/>
+     <rect  width="7.042" y="112.1" x="4.37" height="3.954"/>
+     <rect  width="13.328" y="114.371" x="20.151" height="1.978"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 42.0505, 153.652)">
+  <g >
+   <rect  width="2.29896" y="0" fill="#8D8C8C" x="0" height="2.2968" id="connector0pin"/>
+   <rect  width="1.18398" y="0.556952" fill="#8C8663" x="0.56099" height="1.18189"/>
+   <polygon  points="0,2.2968,0.56099,1.73785,0.56099,0.501957,0,0" fill="#B8AF82"/>
+   <polygon  points="1.74297,0.558951,0.56899,0.558951,0,0,2.29896,0" fill="#80795B"/>
+   <polygon  points="1.74297,1.73785,1.74297,0.558951,2.29896,0,2.29896,2.2968" fill="#5E5B43"/>
+   <polygon  points="0,2.2968,0.56699,1.73785,1.74297,1.73785,2.29896,2.2968" fill="#9A916C"/>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 42.0505, 2.4516)">
+  <g >
+   <rect  width="2.29896" y="0" fill="#8D8C8C" x="0" height="2.2968" id="connector9pin"/>
+   <rect  width="1.18398" y="0.556952" fill="#8C8663" x="0.56099" height="1.18189"/>
+   <polygon  points="0,2.2968,0.56099,1.73785,0.56099,0.501957,0,0" fill="#B8AF82"/>
+   <polygon  points="1.74297,0.558951,0.56899,0.558951,0,0,2.29896,0" fill="#80795B"/>
+   <polygon  points="1.74297,1.73785,1.74297,0.558951,2.29896,0,2.29896,2.2968" fill="#5E5B43"/>
+   <polygon  points="0,2.2968,0.56699,1.73785,1.74297,1.73785,2.29896,2.2968" fill="#9A916C"/>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 49.2505, 153.652)">
+  <g >
+   <rect  width="2.29896" y="0" fill="#8D8C8C" x="0" height="2.2968" id="connector1pin"/>
+   <rect  width="1.18398" y="0.556952" fill="#8C8663" x="0.56099" height="1.18189"/>
+   <polygon  points="0,2.2968,0.56099,1.73785,0.56099,0.501957,0,0" fill="#B8AF82"/>
+   <polygon  points="1.74297,0.558951,0.56899,0.558951,0,0,2.29896,0" fill="#80795B"/>
+   <polygon  points="1.74297,1.73785,1.74297,0.558951,2.29896,0,2.29896,2.2968" fill="#5E5B43"/>
+   <polygon  points="0,2.2968,0.56699,1.73785,1.74297,1.73785,2.29896,2.2968" fill="#9A916C"/>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 49.2505, 2.4516)">
+  <g >
+   <rect  width="2.29896" y="0" fill="#8D8C8C" x="0" height="2.2968" id="connector8pin"/>
+   <rect  width="1.18398" y="0.556952" fill="#8C8663" x="0.56099" height="1.18189"/>
+   <polygon  points="0,2.2968,0.56099,1.73785,0.56099,0.501957,0,0" fill="#B8AF82"/>
+   <polygon  points="1.74297,0.558951,0.56899,0.558951,0,0,2.29896,0" fill="#80795B"/>
+   <polygon  points="1.74297,1.73785,1.74297,0.558951,2.29896,0,2.29896,2.2968" fill="#5E5B43"/>
+   <polygon  points="0,2.2968,0.56699,1.73785,1.74297,1.73785,2.29896,2.2968" fill="#9A916C"/>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 56.4505, 153.652)">
+  <g >
+   <rect  width="2.29896" y="0" fill="#8D8C8C" x="0" height="2.2968" id="connector2pin"/>
+   <rect  width="1.18398" y="0.556952" fill="#8C8663" x="0.56099" height="1.18189"/>
+   <polygon  points="0,2.2968,0.56099,1.73785,0.56099,0.501957,0,0" fill="#B8AF82"/>
+   <polygon  points="1.74297,0.558951,0.56899,0.558951,0,0,2.29896,0" fill="#80795B"/>
+   <polygon  points="1.74297,1.73785,1.74297,0.558951,2.29896,0,2.29896,2.2968" fill="#5E5B43"/>
+   <polygon  points="0,2.2968,0.56699,1.73785,1.74297,1.73785,2.29896,2.2968" fill="#9A916C"/>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 56.4505, 2.4516)">
+  <g >
+   <rect  width="2.29896" y="0" fill="#8D8C8C" x="0" height="2.2968" id="connector7pin"/>
+   <rect  width="1.18398" y="0.556952" fill="#8C8663" x="0.56099" height="1.18189"/>
+   <polygon  points="0,2.2968,0.56099,1.73785,0.56099,0.501957,0,0" fill="#B8AF82"/>
+   <polygon  points="1.74297,0.558951,0.56899,0.558951,0,0,2.29896,0" fill="#80795B"/>
+   <polygon  points="1.74297,1.73785,1.74297,0.558951,2.29896,0,2.29896,2.2968" fill="#5E5B43"/>
+   <polygon  points="0,2.2968,0.56699,1.73785,1.74297,1.73785,2.29896,2.2968" fill="#9A916C"/>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 63.6505, 153.652)">
+  <g >
+   <rect  width="2.29896" y="0" fill="#8D8C8C" x="0" height="2.2968" id="connector3pin"/>
+   <rect  width="1.18398" y="0.556952" fill="#8C8663" x="0.56099" height="1.18189"/>
+   <polygon  points="0,2.2968,0.56099,1.73785,0.56099,0.501957,0,0" fill="#B8AF82"/>
+   <polygon  points="1.74297,0.558951,0.56899,0.558951,0,0,2.29896,0" fill="#80795B"/>
+   <polygon  points="1.74297,1.73785,1.74297,0.558951,2.29896,0,2.29896,2.2968" fill="#5E5B43"/>
+   <polygon  points="0,2.2968,0.56699,1.73785,1.74297,1.73785,2.29896,2.2968" fill="#9A916C"/>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 63.6505, 2.4516)">
+  <g >
+   <rect  width="2.29896" y="0" fill="#8D8C8C" x="0" height="2.2968" id="connector6pin"/>
+   <rect  width="1.18398" y="0.556952" fill="#8C8663" x="0.56099" height="1.18189"/>
+   <polygon  points="0,2.2968,0.56099,1.73785,0.56099,0.501957,0,0" fill="#B8AF82"/>
+   <polygon  points="1.74297,0.558951,0.56899,0.558951,0,0,2.29896,0" fill="#80795B"/>
+   <polygon  points="1.74297,1.73785,1.74297,0.558951,2.29896,0,2.29896,2.2968" fill="#5E5B43"/>
+   <polygon  points="0,2.2968,0.56699,1.73785,1.74297,1.73785,2.29896,2.2968" fill="#9A916C"/>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 70.8505, 153.652)">
+  <g >
+   <rect  width="2.29896" y="0" fill="#8D8C8C" x="0" height="2.2968" id="connector4pin"/>
+   <rect  width="1.18398" y="0.556952" fill="#8C8663" x="0.56099" height="1.18189"/>
+   <polygon  points="0,2.2968,0.56099,1.73785,0.56099,0.501957,0,0" fill="#B8AF82"/>
+   <polygon  points="1.74297,0.558951,0.56899,0.558951,0,0,2.29896,0" fill="#80795B"/>
+   <polygon  points="1.74297,1.73785,1.74297,0.558951,2.29896,0,2.29896,2.2968" fill="#5E5B43"/>
+   <polygon  points="0,2.2968,0.56699,1.73785,1.74297,1.73785,2.29896,2.2968" fill="#9A916C"/>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 70.8505, 2.4516)">
+  <g >
+   <rect  width="2.29896" y="0" fill="#8D8C8C" x="0" height="2.2968" id="connector5pin"/>
+   <rect  width="1.18398" y="0.556952" fill="#8C8663" x="0.56099" height="1.18189"/>
+   <polygon  points="0,2.2968,0.56099,1.73785,0.56099,0.501957,0,0" fill="#B8AF82"/>
+   <polygon  points="1.74297,0.558951,0.56899,0.558951,0,0,2.29896,0" fill="#80795B"/>
+   <polygon  points="1.74297,1.73785,1.74297,0.558951,2.29896,0,2.29896,2.2968" fill="#5E5B43"/>
+   <polygon  points="0,2.2968,0.56699,1.73785,1.74297,1.73785,2.29896,2.2968" fill="#9A916C"/>
+  </g>
+ </g>
+</g>
+</g></svg>
