@@ -6,7 +6,6 @@ void setup() {
 }
 
 void loop() {
-
   SC = digitalRead(pin);
   SC = 1;
   Serial.print("page 1");
