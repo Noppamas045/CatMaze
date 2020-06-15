@@ -21,6 +21,4 @@ SC = 0;
     Serial.write(0xff);
     Serial.write(0xff);
 delay(2000);
-
-
 }
