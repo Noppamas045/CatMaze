@@ -24,6 +24,5 @@ void loop(){
     }else if (X < 600 && X > 400 && Y > 400 && X < 600 ) {
     
     }
-
      delay(100);
 }
