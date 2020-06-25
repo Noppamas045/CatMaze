@@ -92,23 +92,26 @@ void bRandom1PushCallback(void *ptr)
     p1.show();
      randNumber = random(1,4);
      if(randNumber == 1){
-         random1.show();
+         
            tone(8,500,500);
+           random1.show();
             delay(3000);
              p2.show();
-        delay(3000);
-       Q4.show();
+           delay(3000);
+           Q2.show();
      }else if(randNumber == 2){
-            random2.show();
-           tone(8,500,500);       
+            
+           tone(8,500,500);    
+           random2.show();   
            random2.show();
            delay(3000);
            p3.show();
            delay(3000);
            p7.show();
      }else if(randNumber == 3){
-           random3.show();
+           
            tone(8,500,500);
+           random3.show();
            random3.show();
            delay(3000);
            p4.show();
@@ -420,18 +423,20 @@ void setup(){
 
     nexInit();
     /*------------------------------- */
-        bRandom1.attachPush(bRandom1PushCallback);
-        bRandom2.attachPush(bRandom2PushCallback);
-        bRandom3.attachPush(bRandom3PushCallback);
-        bRandom4.attachPush(bRandom4PushCallback);
-        bRandom5.attachPush(bRandom5PushCallback);
-        bRandom6.attachPush(bRandom6PushCallback);
-        bRandom7.attachPush(bRandom7PushCallback);
-        bRandom8.attachPush(bRandom8PushCallback);
-        bRandom9.attachPush(bRandom9PushCallback);
-        bRandom10.attachPush(bRandom10PushCallback);
-        bRandom11.attachPush(bRandom11PushCallback);
+        bRandom1.attachPop(bRandom1PushCallback,&bRandom1);
+        bRandom2.attachPop(bRandom2PushCallback,&bRandom2);
+        bRandom3.attachPop(bRandom3PushCallback,&bRandom3);
+        bRandom4.attachPop(bRandom4PushCallback,&bRandom4);
+        bRandom5.attachPop(bRandom5PushCallback,&bRandom5);
+        bRandom6.attachPop(bRandom6PushCallback,&bRandom6);
+        bRandom7.attachPop(bRandom7PushCallback, &bRandom7);
+        bRandom8.attachPop(bRandom8PushCallback, &bRandom8);
+        bRandom9.attachPop(bRandom9PushCallback, &bRandom9);
+        bRandom10.attachPop(bRandom10PushCallback, &bRandom10);
+        bRandom11.attachPop(bRandom11PushCallback, &bRandom11);
         pinMode(8,OUTPUT);
+         
+
 }
 void loop(){
 
