@@ -1,6 +1,6 @@
 #include <Nextion.h>
 #include <Keypad.h>
-
+//long random(1,4);
 const byte ROWS = 4; //four rows
 const byte COLS = 4; //four columns
 //define the cymbols on the buttons of the keypads
@@ -15,10 +15,11 @@ byte colPins[COLS] = {12, 11, 10, 9}; //connect to the column pinouts of the key
 
 //initialize an instance of class NewKeypad
 Keypad customKeypad = Keypad( makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS); 
+/*--------------------------------------------------------- */
 
 /**************************Random**********************************************/
-String random_array[]= {"random1" , "random2" , "random"};
-int random_array_run = 3;
+int random_array[3]= {1 , 2 , 3};
+String random_array_run = "";
 
 /****************************************************************************** */
 
@@ -70,7 +71,7 @@ NexPage random2 = NexPage(20,0,"random2");
 NexPage random3 = NexPage(21,0,"random3");
 NexPage Win = NexPage(22,0,"Win");
 NexPage Over = NexPage(23,0,"Over");
-
+//NexNumber n0 = NexNumber(3, 2, "n0");
 /*------------------------------------------------------------- */
 //Register a button objvto the touch even list.
 NexTouch *nex_listen_list[] = {
@@ -78,20 +79,631 @@ NexTouch *nex_listen_list[] = {
     &bRandom5, &bRandom6, &bRandom7, &bRandom8, &bRandom9, &bRandom10,
     &bRandom11, &bRandom12, &b2Ans1, &b2Ans2, &b4Ans1, &b4Ans2, &b11Ans1, &b11Ans2,
     &Logo, &Code, &SorE, &p1, &p2, &p3, &p4, &p5, &p6, &p7, &p8, &p9, &p10, &p11, &p12,
-    &Q2, &Q4, &Q8, &Q11, &random1, &random2, &random3, &Win, &Over,
+    &Q2, &Q4, &Q8, &Q11, &random1, &random2, &random3, &Win, &Over,//&n0,
     NULL
 };
 
-void bSTARTPopCallback(void *ptr)
-{
+
+long randNumber;
+/*------------------p1--------------------------------*/
+void bRandom1PushCallback(void *ptr)  
+{   
+    p1.show();
+     randNumber = random(1,4);
+     if(randNumber == 1){
+           tone(8,500,500);
+           delay(300);
+         Serial.print("page 19");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+        delay(3000);
+        Serial.println("page 4");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+        delay(3000);
+           Serial.print("page 16");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+
+     }else if(randNumber == 2){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 20");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 5");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 9");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+
+     }else if(randNumber == 3){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 21");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 6");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 16");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }
+}
+/*------------------p2--------------------------------*/
+void bRandom2PushCallback(void *ptr)  
+{   
+    p2.show();
+     randNumber = random(1,4);
+     if(randNumber == 1){
+           tone(8,500,500);
+           delay(300);
+         Serial.print("page 19");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+        delay(3000);
+        Serial.println("page 5");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+
+     }else if(randNumber == 2){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 20");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 6");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 16");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+
+     }else if(randNumber == 3){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 21");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 7");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }
+}
+/*------------------p3--------------------------------*/
+void bRandom3PushCallback(void *ptr)  
+{   
+    p3.show();
+     randNumber = random(1,4);
+     if(randNumber == 1){
+           tone(8,500,500);
+           delay(300);
+         Serial.print("page 19");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+        delay(3000);
+        Serial.println("page 6");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+        delay(3000);
+        Serial.println("page 16");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+
+     }else if(randNumber == 2){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 20");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 7");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+
+     }else if(randNumber == 3){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 21");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 8");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }
 }
 
+/*------------------p4--------------------------------*/
+void bRandom4PushCallback(void *ptr)  
+{   
+    p4.show();
+     randNumber = random(1,4);
+     if(randNumber == 1){
+           tone(8,500,500);
+           delay(300);
+         Serial.print("page 19");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+        delay(3000);
+        Serial.println("page 7");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+
+     }else if(randNumber == 2){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 20");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 8");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+
+     }else if(randNumber == 3){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 21");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 9");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }
+}
+
+/*------------------p5--------------------------------*/
+void bRandom5PushCallback(void *ptr)  
+{   
+    p5.show();
+     randNumber = random(1,4);
+     if(randNumber == 1){
+           tone(8,500,500);
+           delay(300);
+         Serial.print("page 19");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+        delay(3000);
+        Serial.println("page 8");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+
+     }else if(randNumber == 2){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 20");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 9");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+
+     }else if(randNumber == 3){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 21");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 10");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 17");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }
+}
+
+/*------------------p6--------------------------------*/
+void bRandom6PushCallback(void *ptr)  
+{   
+    p6.show();
+     randNumber = random(1,4);
+     if(randNumber == 1){
+           tone(8,500,500);
+           delay(300);
+         Serial.print("page 19");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+        delay(3000);
+        Serial.println("page 9");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+
+     }else if(randNumber == 2){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 20");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 10");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 17");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+
+     }else if(randNumber == 3){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 21");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 11");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           
+     }
+}
+
+/*------------------p7--------------------------------*/
+void bRandom7PushCallback(void *ptr)  
+{   
+    p7.show();
+     randNumber = random(1,4);
+     if(randNumber == 1){
+           tone(8,500,500);
+           delay(300);
+         Serial.print("page 19");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+        delay(3000);
+           Serial.print("page 10");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 17");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+
+     }else if(randNumber == 2){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 20");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 11");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+
+
+     }else if(randNumber == 3){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 21");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 12");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }
+}
+
+/*------------------p8--------------------------------*/
+void bRandom8PushCallback(void *ptr)  
+{   
+    p8.show();
+     randNumber = random(1,4);
+     if(randNumber == 1){
+           tone(8,500,500);
+           delay(300);
+         Serial.print("page 19");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+        delay(3000);
+           Serial.print("page 11");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }else if(randNumber == 2){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 20");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 12");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }else if(randNumber == 3){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 21");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 13");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 18");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }
+}
+
+/*------------------p9--------------------------------*/
+void bRandom9PushCallback(void *ptr)  
+{   
+    p9.show();
+     randNumber = random(1,4);
+     if(randNumber == 1){
+           tone(8,500,500);
+           delay(300);
+         Serial.print("page 19");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+        delay(3000);
+           Serial.print("page 12");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }else if(randNumber == 2){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 20");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 13");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 18");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }else if(randNumber == 3){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 21");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 14");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(1000); //Win
+           tone(8,262,500);
+           delay(300);
+           tone(8,294,500);
+           delay(300);
+           tone(8,330,500);
+           delay(300);
+           Serial.print("page 22");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }
+}
+/*------------------p10--------------------------------*/
+void bRandom10PushCallback(void *ptr)  
+{   
+    p10.show();
+     randNumber = random(1,4);
+     if(randNumber == 1){
+           tone(8,500,500);
+           delay(300);
+         Serial.print("page 19");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+        delay(3000);
+           Serial.print("page 13");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 18");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }else if(randNumber == 2){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 20");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 14");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(1000); //Win
+           tone(8,262,500);
+           delay(300);
+           tone(8,294,500);
+           delay(300);
+           tone(8,330,500);
+           delay(300);
+           Serial.print("page 22");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }else if(randNumber == 3){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 21");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 13");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 18");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }
+}
+
+/*------------------p11--------------------------------*/
+void bRandom11PushCallback(void *ptr)  
+{   
+    p11.show();
+     randNumber = random(1,4);
+     if(randNumber == 1){
+           tone(8,500,500);
+           delay(300);
+         Serial.print("page 19");
+          Serial.write(0xff);
+         Serial.write(0xff);
+        Serial.write(0xff);
+        delay(3000);
+           Serial.print("page 14");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(1000); //Win
+           tone(8,262,500);
+           delay(300);
+           tone(8,294,500);
+           delay(300);
+           tone(8,330,500);
+           delay(300);
+           Serial.print("page 22");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+     }else if(randNumber == 2){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 20");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 13");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 18");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           
+     }else if(randNumber == 3){
+           tone(8,500,500);
+           delay(300);
+           Serial.print("page 21");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           delay(3000);
+           Serial.print("page 12");
+           Serial.write(0xff);
+           Serial.write(0xff);
+           Serial.write(0xff);
+           
+     }
+}
 
 void setup(){
-  Serial.begin(9600);
-  Logo.show();
+    Serial.begin(9600);
+
+    nexInit();
+    /*------------------------------- */
+
+        bRandom1.attachPush(bRandom1PushCallback);
+        bRandom2.attachPush(bRandom2PushCallback);
+        bRandom3.attachPush(bRandom3PushCallback);
+        bRandom4.attachPush(bRandom4PushCallback);
+        bRandom5.attachPush(bRandom5PushCallback);
+        bRandom6.attachPush(bRandom6PushCallback);
+        bRandom7.attachPush(bRandom7PushCallback);
+        bRandom8.attachPush(bRandom8PushCallback);
+        bRandom9.attachPush(bRandom9PushCallback);
+        bRandom10.attachPush(bRandom10PushCallback);
+        bRandom11.attachPush(bRandom11PushCallback);
+        pinMode(8,OUTPUT);
 }
 void loop(){
 
- 
+        
+nexLoop(nex_listen_list);
+
 }
