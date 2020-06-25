@@ -418,6 +418,40 @@ void bRandom11PushCallback(void *ptr)
      }
 }
 
+/*-------------------Ans---------------------------------- */
+void b2Ans1PushCallback(void *ptr)  {
+    p2.show();
+    tone(8,1000 ,500);
+}
+void b2Ans2PushCallback(void *ptr)  {
+    Over.show();
+    tone(8,1000 ,1000);
+}
+void b4Ans1PushCallback(void *ptr)  {
+    p4.show();
+    tone(8,1000 ,500);
+}
+void b4Ans2PushCallback(void *ptr)  {
+    Over.show();
+    tone(8,1000 ,1000);
+}
+void b8Ans1PushCallback(void *ptr)  {
+    p8.show();
+    tone(8,1000 ,500);
+}
+void b8Ans2PushCallback(void *ptr)  {
+    Over.show();
+    tone(8,1000 ,1000);
+}
+void b11Ans1PushCallback(void *ptr)  {
+    p11.show();
+    tone(8,1000 ,500);
+}
+void b11Ans2PushCallback(void *ptr)  {
+    Over.show();
+    tone(8,1000 ,1000);
+}
+
 void setup(){  
     Serial.begin(9600);
 
@@ -434,14 +468,21 @@ void setup(){
         bRandom9.attachPop(bRandom9PushCallback, &bRandom9);
         bRandom10.attachPop(bRandom10PushCallback, &bRandom10);
         bRandom11.attachPop(bRandom11PushCallback, &bRandom11);
+        b2Ans1.attachPop(b2Ans1PushCallback, &b2Ans1);
+        b2Ans2.attachPop(b2Ans2PushCallback, &b2Ans2);
+        b4Ans1.attachPop(b4Ans1PushCallback, &b4Ans1);
+        b4Ans2.attachPop(b4Ans2PushCallback, &b4Ans2);
+        b8Ans1.attachPop(b8Ans1PushCallback, &b8Ans1);
+        b8Ans1.attachPop(b8Ans1PushCallback, &b8Ans2);
+        b11Ans1.attachPop(b11Ans1PushCallback, &b11Ans1);
+        b11Ans1.attachPop(b11Ans1PushCallback, &b11Ans1);
+
         pinMode(8,OUTPUT);
          
 
 }
 void loop(){
-
-
-        
+  
 nexLoop(nex_listen_list);
 
 }
