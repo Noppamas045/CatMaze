@@ -457,25 +457,25 @@ void setup(){
 
     nexInit();
     /*------------------------------- */
-        bRandom1.attachPop(bRandom1PushCallback,&bRandom1);
-        bRandom2.attachPop(bRandom2PushCallback,&bRandom2);
-        bRandom3.attachPop(bRandom3PushCallback,&bRandom3);
-        bRandom4.attachPop(bRandom4PushCallback,&bRandom4);
-        bRandom5.attachPop(bRandom5PushCallback,&bRandom5);
-        bRandom6.attachPop(bRandom6PushCallback,&bRandom6);
-        bRandom7.attachPop(bRandom7PushCallback, &bRandom7);
-        bRandom8.attachPop(bRandom8PushCallback, &bRandom8);
-        bRandom9.attachPop(bRandom9PushCallback, &bRandom9);
-        bRandom10.attachPop(bRandom10PushCallback, &bRandom10);
-        bRandom11.attachPop(bRandom11PushCallback, &bRandom11);
-        b2Ans1.attachPop(b2Ans1PushCallback, &b2Ans1);
-        b2Ans2.attachPop(b2Ans2PushCallback, &b2Ans2);
-        b4Ans1.attachPop(b4Ans1PushCallback, &b4Ans1);
-        b4Ans2.attachPop(b4Ans2PushCallback, &b4Ans2);
-        b8Ans1.attachPop(b8Ans1PushCallback, &b8Ans1);
-        b8Ans1.attachPop(b8Ans1PushCallback, &b8Ans2);
-        b11Ans1.attachPop(b11Ans1PushCallback, &b11Ans1);
-        b11Ans1.attachPop(b11Ans1PushCallback, &b11Ans1);
+        bRandom1.attachPush(bRandom1PushCallback);
+        bRandom2.attachPush(bRandom2PushCallback);
+        bRandom3.attachPush(bRandom3PushCallback);
+        bRandom4.attachPush(bRandom4PushCallback);
+        bRandom5.attachPush(bRandom5PushCallback);
+        bRandom6.attachPush(bRandom6PushCallback);
+        bRandom7.attachPush(bRandom7PushCallback);
+        bRandom8.attachPush(bRandom8PushCallback);
+        bRandom9.attachPush(bRandom9PushCallback);
+        bRandom10.attachPush(bRandom10PushCallback);
+        bRandom11.attachPush(bRandom11PushCallback);
+        b2Ans1.attachPush(b2Ans1PushCallback);
+        b2Ans2.attachPush(b2Ans2PushCallback);
+        b4Ans1.attachPush(b4Ans1PushCallback);
+        b4Ans2.attachPush(b4Ans2PushCallback);
+        b8Ans1.attachPush(b8Ans1PushCallback);
+        b8Ans1.attachPush(b8Ans1PushCallback);
+        b11Ans1.attachPush(b11Ans1PushCallback);
+        b11Ans1.attachPush(b11Ans1PushCallback);
 
         pinMode(8,OUTPUT);
          
